@@ -1,14 +1,15 @@
 %FFT Audio.
-%Works for small audio files, doesn't work for music
 %Author: Fernando Homem da Costa
 
 %filename -> audio file
-filename = '/Users/fernando/Downloads/alarm_beep.wav';
+filename = '/Users/fernando/Downloads/DIWK.wav';
 
 %audioread ->it's a function that will read the wav file.
 %y -> samples (amostras)
 %fs -> sampling frequency (amostras de frequência)
-[y, fs] = audioread(filename);
+%sample_v -> sampling time vector [start:finish]
+sample_v = [1,60];
+[y, fs] = audioread(filename, sample_v);
 
 %linspace -> it's function that will create the time vector
 %starting time = 0;
