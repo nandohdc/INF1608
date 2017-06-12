@@ -3,7 +3,7 @@
 %Author: Fernando Homem da Costa
 
 %filename -> audio file
-filename = '/Users/fernando/Downloads/alarm_beep.wav';
+filename = '/Users/fernando/Downloads/DIWK.wav';
 
 %audioread ->it's a function that will read the wav file.
 %y -> samples (amostras)
