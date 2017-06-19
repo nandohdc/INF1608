@@ -7,7 +7,7 @@ filename = 'audio/alarm_beep.wav';
 
 %audioread ->it's a function that will read the wav file.
 %y -> samples (amostras)
-%fs -> sampling frequency (amostra de frequência)
+%fs -> sampling frequency (amostra de frequï¿½ncia)
 [y, fs] = audioread(filename);
 
 sound(y, fs);
@@ -31,9 +31,9 @@ N = length(y);
 %deltaF -> distance between two samples of frequency.
 deltaF = fs/N;
 
-disp("Número de amostras: " + N);
-disp("Intervalo entre duas amostras de frequências: " + deltaF);
-disp("Taxa de frequência: " + fs);
+disp("Nï¿½mero de amostras: " + N);
+disp("Intervalo entre duas amostras de frequï¿½ncias: " + deltaF);
+disp("Taxa de frequï¿½ncia: " + fs);
 
 %frequency_v -> it's the frequency vector
 %first frequency = 0
@@ -41,7 +41,7 @@ disp("Taxa de frequência: " + fs);
 %lengthFFT = length of the frequency vector
 frequency_v = linspace(0, deltaF, N/2);
 
-% x -> the FFT of the samples y in 1024 points
+% x -> the FFT of the samples y in  points
 x = abs(fft(y ,N));
 
 figure;
